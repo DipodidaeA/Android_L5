@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/chTextView"
+        android:layout_width="90dp"
+        android:layout_height="35dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="160dp"
+        android:text="Заміряні"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/mTextView"
+        android:layout_width="90dp"
+        android:layout_height="35dp"
+        android:layout_marginTop="160dp"
+        android:layout_marginEnd="48dp"
+        android:text="Можливі"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/future1TextView"
+        android:layout_width="140dp"
+        android:layout_height="125dp"
+        android:layout_marginTop="200dp"
+        android:layout_marginEnd="20dp"
+        android:text="через 30 хв&#10;t: 35.55°C&#10;тиск: 1060.53hPa&#10;вологість: 25.38%&#10;погода: сонячна&#10;імовір: висока&#10;"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/cur1TextView"
+        android:layout_width="140dp"
+        android:layout_height="115dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="200dp"
+        android:text="0 хв назад&#10;t: 30.55°C&#10;тиск: 1045.53hPa&#10;вологість: 27.7%&#10;погода: сонячна"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/cur2TextView"
+        android:layout_width="140dp"
+        android:layout_height="115dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="320dp"
+        android:text="30 хв назад&#10;t: 25.55°C&#10;тиск: 1005.53hPa&#10;вологість: 57.34%&#10;погода: хмарна"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/cur3TextView"
+        android:layout_width="140dp"
+        android:layout_height="115dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="440dp"
+        android:text="60 хв назад&#10;t: 22.55°C&#10;тиск: 950.53hPa&#10;вологість: 85.57%&#10;погода: дощ"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/future3TextView"
+        android:layout_width="140dp"
+        android:layout_height="125dp"
+        android:layout_marginTop="472dp"
+        android:layout_marginEnd="20dp"
+        android:text="через 30 хв&#10;t: 25.55°C&#10;тиск: 969.53hPa&#10;вологість: 71.34%&#10;погода: хмарна&#10;імовір: низька&#10;"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/future2TextView"
+        android:layout_width="140dp"
+        android:layout_height="125dp"
+        android:layout_marginTop="332dp"
+        android:layout_marginEnd="20dp"
+        android:text="через 30 хв&#10;t: 28.55°C&#10;тиск: 1028.53hPa&#10;вологість: 41.34%&#10;погода: хмарна&#10;імовір: середня&#10;"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btnClear"
+        android:layout_width="125dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="20dp"
+        android:text="Очистити"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btnUpdate"
+        android:layout_width="125dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="140dp"
+        android:layout_marginTop="80dp"
+        android:text="Оновити"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ProgressBar
+        android:id="@+id/pressureBar"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="300dp"
+        android:layout_height="36dp"
+        android:layout_marginTop="620dp"
+        android:max="20"
+        android:progress="1013"
+        android:progressDrawable="@drawable/progress_bar_style"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/presBarText"
+        android:layout_width="130dp"
+        android:layout_height="35dp"
+        android:layout_marginTop="660dp"
+        android:textAlignment="center"
+        android:text="0.0 гПа"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
